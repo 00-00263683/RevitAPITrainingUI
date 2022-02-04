@@ -1,0 +1,26 @@
+﻿<Window x:Class="RevitAPITrainingUI.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RevitAPITrainingUI"
+             mc:Ignorable="d" 
+             Height="170" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+    <Label Content="Количество труб" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+        <Button Content="Посчитать" Command="{Binding SelectPipes}" Grid.Row="0" Grid.Column="1" Margin="5"/>
+        <Label Content="Объёмом всех стен" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+        <Button Content="Посчитать" Command="{Binding SelectWalls}" Grid.Row="1" Grid.Column="1" Margin="5"/>
+        <Label Content="Количество дверей" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+        <Button Content="Посчитать" Command="{Binding SelectDoors}" Grid.Row="2" Grid.Column="2" Margin="5"/>
+    </Grid>
+</Window>
